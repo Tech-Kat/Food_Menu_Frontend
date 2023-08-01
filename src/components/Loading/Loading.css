@@ -1,0 +1,7 @@
+.Loading{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #b6e6f1;
+    height: 99%;
+}

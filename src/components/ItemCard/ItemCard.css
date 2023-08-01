@@ -1,0 +1,17 @@
+.CardList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Card_Image img{
+    width: 20vw;
+    height: 30vh;
+}
+
+.CardList_Info li{
+ text-decoration: none;
+}
+
