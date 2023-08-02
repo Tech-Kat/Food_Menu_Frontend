@@ -1,20 +1,17 @@
 import "./ItemCard.css";
 
-const ItemCard = ({items}) => {
-
-  const {name, price, toppings, shortDescription, id, image} = items
+const ItemCard = ({ items }) => {
+  const { name, price, toppings, shortDescription, id, image } = items;
   return (
     <div className="ItemCard" key={id}>
-      <h1>{name}</h1>
+      <h2>{name}</h2>
       <h3>{shortDescription}</h3>
-      <div className="Card_Image">
+      <div className="ItemCard_Image">
         <img src={image} alt="pic" />
       </div>
-      <div className="CardList_Info">
-        <ul>
-          <li>Price: ${price.toFixed(2)}</li>
-          <li>Toppings: {toppings.join(",")}</li>
-        </ul>
+      <div className="ItemCard_Info">
+        <p>Price: ${price.toFixed(2)}</p>
+        <p>Toppings: {toppings.join(", ")}</p>
       </div>
     </div>
   );

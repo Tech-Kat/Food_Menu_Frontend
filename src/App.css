@@ -2,4 +2,12 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  background-color: darkgray;
+  height: 100%;
+}
+
+.App h1{
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }

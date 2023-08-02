@@ -50,6 +50,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Our Menu</h1>
       <Container center={Boolean(error || loading)}>{renderedContent()}</Container>
     </div>
   );
