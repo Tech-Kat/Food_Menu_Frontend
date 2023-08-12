@@ -1,3 +1,21 @@
-.Error {
-    background-color: solid rgb(243, 115, 83);    
+.Error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background-color: crimson;
+    color: black;
+    font-size: xx-large;
+    height: 30vh;
+    border: black solid 5px;
 }
+
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

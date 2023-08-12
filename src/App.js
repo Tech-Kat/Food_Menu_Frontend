@@ -19,7 +19,7 @@ function App() {
         setLoading(true);
         const response = await fetch(`${API_URL}/items`);
         const json = await response.json();
-        console.log("<App /> useEffect() fetched data", json);
+
         const { data, error } = json;
 
         if (response.ok) {
@@ -30,7 +30,6 @@ function App() {
           setLoading(false);
         }
       } catch (err) {
-        console.log(`<App/> useEffect() error: ${err.message}`);
         setLoading(false);
         setError(err.message);
       }
@@ -51,7 +50,9 @@ function App() {
   return (
     <div className="App">
       <h1>Our Menu</h1>
-      <Container center={Boolean(error || loading)}>{renderedContent()}</Container>
+      <Container center={Boolean(error || loading)}>
+        {renderedContent()}
+      </Container>
     </div>
   );
 }
